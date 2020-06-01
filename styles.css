@@ -141,8 +141,8 @@ footer {
     background: #580c25;
   }
 
-  .showing {
-    max-height: 20em;
+  .nav_links.showing {
+    height: 20em;
   }
 
   .link_items {
