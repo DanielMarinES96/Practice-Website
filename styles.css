@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #1b0131;
+}
+
+.logo,
+.link_items,
+.items {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+header {
+  background: url(/images/Background_1.png) no-repeat 50% 50%;
+  background-size: cover;
+  height: 55vh;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  position: fixed;
+  float: left;
+  margin: 8px 36px;
+  font-weight: 600;
+  transition: 1s;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+.nav_links {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+.link_items {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.items {
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+
+.items:hover {
+  text-decoration: underline;
+}
+
+nav.backgroundc .nav_links {
+  background: #580c25;
+}
+
+.menu-icon {
+  width: 100%;
+  background: rgba(88, 12, 37, 0.7);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.content {
+  background-color: white;
+  box-shadow: black 0px 5px 10px;
+  width: 70%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  padding: 3rem 3rem;
+}
+
+.my_work {
+  background-color: white;
+  box-shadow: black 0px 5px 10px;
+  width: 70%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  padding: 3rem 3rem;
+}
+
+footer {
+  background-color: none;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.main-info p {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+.date p {
+  margin-top: 10px;
+  margin-bottom: 32px;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 0.5rem;
+}
+
+@media (max-width: 816px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  .nav_links {
+    max-height: 0px;
+    background: rgb(88, 12, 37);
+  }
+
+  .content,
+  .my_work {
+    width: 85%;
+  }
+
+  nav.backgroundc .nav_links {
+    background: #580c25;
+  }
+
+  .nav_links.showing {
+    height: 20em;
+  }
+
+  .link_items {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
